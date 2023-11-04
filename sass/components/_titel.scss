@@ -1,0 +1,18 @@
+@use "./../globals/index" as g;
+
+.container{
+    &__texts{
+        &--titel {
+            font-size: 10px;
+            font-size:clamp(10px,1.2vw, 1.1rem) ;
+            margin-bottom: 0.5rem;
+            color: var(--Very-Dark-Grayish-Blue);
+            font-weight: 700;
+            margin-bottom: 20px;
+            @include g.break-up(large){
+                font-size:clamp(1rem, 0.875rem + 0.65vw, 1.1rem) ;
+    
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.container{
+    &__texts{   
+        &--par{
+            color: var(--Grayish-Blue);
+            font-weight: 500;
+            line-height: 20px;
+        }
+    }
+}

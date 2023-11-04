@@ -1,0 +1,14 @@
+@use "./../globals/index" as g;
+.container{
+    &__texts{
+        padding: 35px 30px 20px;
+        @include g.break-up(large){
+            flex-basis: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px 5.2rem 40px 2.3rem;
+        }
+
+    }
+}

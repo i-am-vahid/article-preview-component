@@ -1,0 +1,37 @@
+@use "./../globals/index" as g;
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    height: 100vh;
+    background-color: var(--Light-Grayish-Blue);
+    padding: 0 2rem;
+
+    @include g.flexCenter(row)
+
+}
+
+.container{
+    background-color: white;
+    border-radius: .75rem;
+    position: relative;
+    box-shadow: 0px 1rem 6rem rgba(0, 0, 0, 0.2);
+
+    @include g.break-up(large){
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    @media (min-width:600px) and (max-width:1200px) {
+        max-width:80%;
+        flex-direction: row;
+    }
+
+}

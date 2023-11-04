@@ -1,0 +1,59 @@
+@use "./../globals/index" as g;
+
+.container{
+    &__texts{
+        &--person{
+            margin-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            
+            & .person_pic{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                    & img{
+                        border-radius: 50%;
+                        width: 40px;
+                    }
+            & .person__info{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                    
+            
+                & .person__info h5{
+                color: var(--Very-Dark-Grayish-Blue);
+                margin-bottom: 6px;
+
+                    @include g.break-up(large){
+                        font-size: 15px;
+                    }
+                }
+
+                & .person__info p{
+                    color: var(--Grayish-Blue);
+                }
+
+               
+
+            
+                }
+
+            }
+            & .share{     
+                cursor: pointer;
+                width: 5vh;
+                height: 5vh;
+                border-radius: 50%;
+                background-color: var(--Light-Grayish-Blue);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+        }
+    }
+}
